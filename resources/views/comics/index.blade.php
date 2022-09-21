@@ -11,7 +11,7 @@
 
     <ul class="d-flex flex-wrap text-center justify-content-between">
        @foreach ($comics as $comic)
-       <a href="">
+       <a href="{{ route('comics.show', $comic->id) }}">
         <li>
             <div class="card p-2">
                 

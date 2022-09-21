@@ -8,7 +8,4 @@
   <li class="nav-item">
     <a class="nav-link @if (Route::is('comics.index')) active @endif" href="{{ route('comics.index') }}">Comics index</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Single Comic</a>
-  </li>
 </ul>
