@@ -9,3 +9,7 @@
     <a class="nav-link @if (Route::is('comics.index')) active @endif" href="{{ route('comics.index') }}">Comics index</a>
   </li>
 </ul>
+
+<div class="jumbo">
+
+</div>
