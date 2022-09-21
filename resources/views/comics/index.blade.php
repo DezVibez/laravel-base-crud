@@ -6,9 +6,12 @@
 
 @section('content')
 
-<h1>Comics</h1>
+    <div class="d-flex justify-content-between">
+        <h1>Comics</h1>
+    
+        <a href="{{ route('comics.create') }}" class="btn btn-primary text-center m-3">Crea Nuovo</a>
 
-    <a href="{{ route('comics.create') }}" class="btn btn-primary text-center m-3">Crea Nuovo</a>
+    </div>
 
     <ul class="d-flex flex-wrap text-center justify-content-between">
        @foreach ($comics as $comic)
