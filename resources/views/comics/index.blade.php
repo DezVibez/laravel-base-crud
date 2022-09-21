@@ -9,5 +9,7 @@
 <h1>Comics</h1>
 
 
+@dump($comics)
+
 
 @endsection
