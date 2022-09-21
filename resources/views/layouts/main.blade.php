@@ -10,7 +10,7 @@
 </head>
 <body>
 
-@include(includes.header)
+@include('includes.header')
 
 <main>
 
@@ -21,7 +21,7 @@
 
 
 
-@include(includes.footer)
+@include('includes.footer')
     
 </body>
 </html>
