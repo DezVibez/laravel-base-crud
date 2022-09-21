@@ -6,7 +6,9 @@
 
 @section('content')
 
-<form action="" method="">
+<form action="{{ route('comics.store') }}" method="POST">
+
+@csrf
 
 <label for="title" class="form-label">Titolo Comic</label>
 <input type="text" class="form-control" id="title" name="title">
@@ -29,8 +31,9 @@
 <label for="tipo" class="form-label">Tipo</label>
 <input type="text" class="form-control" id="tipo" name="type">
 
-<a href="" class="btn btn-primary m-3">
-    Invia!
+<a href="" >
+
+  <input type="submit" class="btn btn-primary m-3 value="invia">
     
 </a>
 
