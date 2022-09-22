@@ -9,22 +9,26 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}" >
 </head>
 <body>
+    @include('includes.header')
 
-@include('includes.header')
+    <div class="background">
 
-<main>
-
-<div class="my-container">
-
-    @yield('content')
-
-</div>
-
-
-
-</main>
-
-
+        
+        
+        <main>
+            
+            <div class="my-container">
+                
+                @yield('content')
+                
+            </div>
+            
+            
+            
+        </main>
+        
+    </div>
+    
 
 @include('includes.footer')
     

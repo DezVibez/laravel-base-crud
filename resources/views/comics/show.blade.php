@@ -4,25 +4,30 @@
 
 @section('content')
 
-        <div class="main-card">
 
-            <img src="{{ $comic->thumb }}" alt="">
+        <div class="show-card d-flex justify-content-center align-items-center">
 
-            <div>
-                {{ $comic->price }}
+            <div class="text-center">
+
+                <img class="img-fluid" src="{{ $comic->thumb }}" alt="">
+    
+                <div>
+                    {{ $comic->price }}&euro;
+                </div>
+    
+                <div>
+                    {{ $comic->title }}
+                </div>
+    
+                <div>
+                    {{ $comic->sale_date }}
+                </div>
+    
+                <div>
+                    {{ $comic->type }}
+                </div>
             </div>
 
-            <div>
-                {{ $comic->title }}
-            </div>
-
-            <div>
-                {{ $comic->sale_date }}
-            </div>
-
-            <div>
-                {{ $comic->type }}
-            </div>
         </div>
 
 @endsection

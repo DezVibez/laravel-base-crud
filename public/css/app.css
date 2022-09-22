@@ -10873,9 +10873,24 @@ textarea.form-control-lg {
 
 main .my-card {
   width: 200px;
-  border: 1px solid #2c2b2b;
-  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0%;
+  margin-bottom: 30px;
+}
+main .my-card:hover {
+  transform: scale(110%);
 }
 main .my-card a {
   text-decoration: none;
+}
+
+.show-card {
+  height: 500px;
+}
+
+footer {
+  background-image: url(/images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
 }

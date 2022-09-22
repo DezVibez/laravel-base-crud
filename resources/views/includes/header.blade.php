@@ -13,6 +13,10 @@
           <a class="nav-link @if (Route::is('comics.index')) active @endif" aria-current="page" href="{{ route('comics.index') }}">Comics</a>
         </li>
 
+        <li class="nav-item">
+          <a class="nav-link @if (Route::is('comics.create')) active @endif" aria-current="page" href="{{ route('comics.create') }}">Crea un Comic</a>
+        </li>
+
       </ul>
     </div>
   </div>
