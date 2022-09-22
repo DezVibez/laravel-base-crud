@@ -14,7 +14,7 @@
 
 <main>
 
-<div class="container">
+<div class="my-container">
 
     @yield('content')
 

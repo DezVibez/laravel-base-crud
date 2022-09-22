@@ -10859,9 +10859,23 @@ textarea.form-control-lg {
   list-style-type: none;
 }
 
+.my-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
 .jumbo {
   height: 400px;
   background-image: url("/images/jumbotron.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main .my-card {
+  width: 200px;
+  border: 1px solid #2c2b2b;
+  border-radius: 5%;
+}
+main .my-card a {
+  text-decoration: none;
 }

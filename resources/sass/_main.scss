@@ -1,3 +1,11 @@
 main{
-    
+    .my-card{
+        width: 200px;
+        border: 1px solid #2c2b2b;
+        border-radius: 5%;
+
+        a{
+            text-decoration: none;
+        }
+    }
 }
