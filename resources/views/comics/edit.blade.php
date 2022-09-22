@@ -6,7 +6,7 @@
 
 @section('content')
 
-<form action="{{ route('comics.store') }}" method="POST">
+<form action="{{ route('comics.update', $comic->id ) }}" method="POST">
 
 @csrf
 @method('PUT')

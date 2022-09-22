@@ -16,6 +16,7 @@
     <ul class="d-flex flex-wrap text-center justify-content-between">
        @foreach ($comics as $comic)
        <a href="{{ route('comics.show', $comic->id) }}">
+       
         <li>
             <div class="card p-2">
                 
@@ -28,7 +29,17 @@
                         {{ $comic->series }}
                     </div>
 
-
+                    <div>
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-sm btn-warning my-3">Modifica</a>
+                    </div>
+                    
+                    <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    @method('DELETE')    
+                    @csrf    
+                        <button type="submit" class="btn btn-sm btn-danger">
+                            Elimina
+                        </button>
+                    </form>
 
                 </div>
 
