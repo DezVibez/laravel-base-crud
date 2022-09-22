@@ -33,7 +33,7 @@
                     <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-sm btn-warning my-3">Modifica</a>
                     </div>
                     
-                    <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    <form action="{{ route('comics.destroy',$comic->id) }}" method="POST">
                     @method('DELETE')    
                     @csrf    
                         <button type="submit" class="btn btn-sm btn-danger">

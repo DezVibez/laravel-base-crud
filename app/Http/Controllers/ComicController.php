@@ -102,7 +102,7 @@ class ComicController extends Controller
     {
         $comic = Comic::findOrFail($id);
         
-        $comic = delete();
+        $comic->delete();
 
         return redirect()->route('comics.index');
     }

@@ -32,7 +32,7 @@
 <label for="tipo" class="form-label">Tipo</label>
 <input type="text" class="form-control" id="tipo" name="type" value="{{ $comic->type }}">
 
-<a href="" >
+<a href="{{route('comics.edit', $comic->id ) }}" >
 
   <input type="submit" class="btn btn-primary m-3" value= "Modifica">
     
